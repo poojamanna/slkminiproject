@@ -1,0 +1,32 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h2>Products</h2>
+	</div>
+	<div class="panel-body">
+
+	</div>
+	<div class="container" >
+	<div class="row" style="align-self: auto;">
+		<div class="col-md-12">
+			<div  *ngFor="let prod of products | async">
+ 
+  <div class="column">
+  	
+
+  	    <div class="card">
+
+  	        <p>{{prod.product_id}}</p>
+          	<p>{{prod.product_name}}</p>
+<button (click)="getProd(prod.product_id,prod.product_name,prod.product_description,prod.product_price,prod.product_icon)"><img src="{{prod.product_icon}}" class="card-img-top img-fluid" style="width: 500px;height: 500px" /></button>
+            <p>{{prod.product_price}}</p>
+            <p>{{prod.product_description}}</p>            
+            <p>{{prod.product_status}}</p>
+            <p>{{prod.product_stock}}</p>
+             </div>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>

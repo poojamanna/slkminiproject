@@ -1,0 +1,25 @@
+<div class="jumbotron">
+<div class="container-fluid">
+
+<div [hidden]="submitted" style="width: 400px;">
+	<h3>Please Sign In</h3>
+	<form>
+	
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" class="form-control" name="name" id="name" [(ngModel)]="user.name" required />
+		</div>
+
+
+
+		<div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" id="password" [(ngModel)]="user.password" required name="password"/>
+  </div>
+ 
+		<button type="submit" (click)="Loginuser()" class="btn btn-success">Submit</button>
+	</form>
+	
+</div>
+</div>
+</div>
